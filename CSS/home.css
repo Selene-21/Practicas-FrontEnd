@@ -1,55 +1,60 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #aaf3ca;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d9f8a8;
+  color: #333;
 }
 
 /* Encabezados */
-h1, h2, h3 {
-    color: #444;
+h1,
+h3 {
+  color: #444;
+}
+h2 {
+  color: aquamarine;
 }
 
 /* Contenedor principal */
 .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Párrafos */
 p {
-    line-height: 1.6;
+  line-height: 1.6;
+  color: #444;
 }
 
 /* Botón */
 button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #996ab4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 button:hover {
-    background-color: #0056b3;
+  background-color: #b89cca;
 }
 
 /* Clases adicionales */
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .mt-20 {
-    margin-top: 20px;
+  margin-top: 20px;
 }
