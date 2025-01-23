@@ -5,99 +5,40 @@
         <title>Naturaleza Viva La Calera</title>
         <meta content="Raven" name="author">
         <meta content="description" content="catalogo">
-        <meta content="keywords" content="">
+        <meta content="keywords" content="plantas">
         <link rel="stylesheet" href="../CSS/home.css" type="text/css">
     </head>
     <body> 
       <header>
         <h1>Naturaleza Viva</h1>
         <h2><em>La Calera</em></h2>
-        <p id="titulo bienvenida" style="color:aquamarine">Bienvenidos a Nuestro Jardin</p>
-        <a href="www.instagram.com/naturalezaviva.lacalera?igsh=MTdybWs0YmhndnN5YQ==" target="_blank">Conocenos</a>
-        <img src="" alt="foto de jardin" height="30" width="60">
+        <p id="titulo bienvenida">Bienvenidos a Nuestro Jardín</p>
+        <img src="../Images/lithops-succulents-cactus-lithops-dorotheae_98330-36.avif" alt="foto de jardin" height="30" width="60">
       </header>
       <nav>
-        <p> <span>Nuestras plantitas</span></p>
-          <ul>
-            <table border="1" cellpading="3">
-            
-              <tr>
-                <th>Cactus y Crasas</th>
-                <th>Flores y Enredaderas</th>
-                <th>De Media Sombra</th>
-              </tr>
-               
-              <tr>
-                <td><li>Liptops</li>
-                    <li>Nariz de Borracho</li> 
-                   <li>Manito de Oso</li></td> 
-                    <td><li>Manzanilla</li></td>
-                    <td><li>Nariz de Borracho</li>
-                </td>
-              </tr>
-            
-            </table>
-          </ul>
+        <button type="button">Conocenos</button>
+        <button type="button">Nuestro Catalogo</button>
+        <button type="button">Contacto</button>
     </nav>
     <main>
-
+      <p id="parrafo">En Naturaleza Viva contamos con una gran variedad de cactus y crasas.</p>
+      <p>No dudes en <em>Consultar</em></p>
+    </main>
+      <section id="Forms">
         <div class="content">  
           <form action="/submit_form" method="Publicacion">
             <label for="nombre">Nombre:</label>
             <tipo de entrada="texto" id="nombre" nombre="nombre"></tipo>
-            <input type="text" placeholder="Nombre"></input>
-            <label for="correo electronico">Correo electronico </label>
-            <tipo de entrada="correo electronico" id="correo electronico" nombre="correo electronico"></tipo>
-            <input type="text" placeholder="Email"></input>
+            <input type="text" placeholder="Nombre">
+            <label for="telefono">Telefono</label>
+            <input type="telefono" placeholder="Telefono"
+            <label for="Mensajes">Tu Consulta</label>
+            <tipo de entrada="texto" id="consultas" nombre="Consultas"></tipo>
+            <input type="text" placeholder="Escribe aquí" value="">
             <tipo de entrada="enviar" valor="Enviar"></tipo>
-            <button>Hacer pedido</button>
+            <button type="submit">Consultar</button>
           </form>
         </div>
-      </main>
-
-        <script> //modificar contenido de un elemento
-        document.getElementById('cambiarEstilo').addEventListener('click', () => {
-            const parrafo = document.getElementById('parrafo');
-            parrafo.style.color = 'blue';
-            parrafo.style.fontSize = '20px';
-            parrafo.style.fontWeight = 'bold';
-          });
-        </script>
-
-         <script>//cambiar estilo
-            document.getElementById('cambiarEstilo').addEventListener('click', () => {
-              const parrafo = document.getElementById('parrafo');
-              parrafo.style.color = 'blue';
-              parrafo.style.fontSize = '20px';
-              parrafo.style.fontWeight = 'bold';
-            });
-          </script>
-           <p id="parrafo">Este es un párrafo de ejemplo.</p>
-           <button id="toggleClase">Resaltar Párrafo</button>
-         
-           <script>//añadir o quitar clases
-             document.getElementById('toggleClase').addEventListener('click', () => {
-               const parrafo = document.getElementById('parrafo');
-               parrafo.classList.toggle('resaltado');
-             });
-           </script>
-           <div id="contenedor"></div>
-           <button id="añadirElemento">Añadir Elemento</button>
-         
-           <script>//añadir elementos al DOM
-             document.getElementById('añadirElemento').addEventListener('click', () => {
-               const nuevoElemento = document.createElement('p');
-               nuevoElemento.innerText = 'Nuevo párrafo añadido';
-               document.getElementById('contenedor').appendChild(nuevoElemento);
-             });
-           </script>
-           <input type="text" id="entrada" placeholder="Escribe algo...">
-           <p id="salida"></p>
-         
-           <script>//cambiar contenidos en base a eventos
-             document.getElementById('entrada').addEventListener('input', (event) => {
-               document.getElementById('salida').innerText = event.target.value;
-             });
-           </script>
+      </section>
     </body>
 </html>
