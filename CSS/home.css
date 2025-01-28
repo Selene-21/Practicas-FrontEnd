@@ -1,10 +1,11 @@
 /* Estilos generales */
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  margin: 0;
+  margin: 20px;
   padding: 0;
+  border: 0;
   background-color: #d9f8a8;
-  color: #333;
+  color: #3333332a;
   text-align: center;
 }
 
@@ -22,14 +23,20 @@ h2 {
 /* Contenedor principal */
 .container {
   width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
+  height: 100px;
+  margin: auto;
+  padding: auto;
+  background-color: #ffffff8a;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 50%;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Párrafos */
 p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   line-height: 1.6;
   color: #444;
 }
@@ -108,4 +115,11 @@ button:hover {
 
 .mt-20 {
   margin-top: 20px;
+}
+
+footer {
+  margin: auto;
+  padding: auto;
+  margin-top: 100%;
+  background-color: #444;
 }

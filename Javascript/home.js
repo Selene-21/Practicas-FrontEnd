@@ -1,10 +1,10 @@
 //Image Slide
-const slides = naturalizavivalacalera.querySelectorAll(".slides img");
+const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalId = null;
 
 //initializeSlider()
-naturalizavivalacalera.addEventListener("DOMContentLoaded", initializeSlider);
+document.addEventListener("DOMContentLoaded", initializeSlider);
 function initializeSlider() {
   if (slides.length > 0) {
     slides[slideIndex].classList.add("displaySlide");
@@ -37,23 +37,19 @@ function nextSlide() {
 
 function Actions(changeColor, addTxt) {
   //modificar contenido de un elemento
-  naturalizavivalacalera
-    .getElementById("cambiarEstilo")
-    .addEventListener("click", () => {
-      const parrafo = naturalizavivalacalera.getElementById("parrafo");
-      parrafo.style.color = "blue";
-      parrafo.style.fontSize = "20px";
-      parrafo.style.fontWeight = "bold";
-    });
+  document.getElementById("cambiarEstilo").addEventListener("click", () => {
+    const parrafo = document.getElementById("parrafo");
+    parrafo.style.color = "blue";
+    parrafo.style.fontSize = "20px";
+    parrafo.style.fontWeight = "bold";
+  });
   //cambiar estilo
-  naturalizavivalacalera
-    .getElementById("cambiarEstilo")
-    .addEventListener("click", () => {
-      const parrafo = document.getElementById("parrafo");
-      parrafo.style.color = "red";
-      parrafo.style.fontSize = "20px";
-      parrafo.style.fontWeight = "bold";
-    });
+  document.getElementById("cambiarEstilo").addEventListener("click", () => {
+    const parrafo = document.getElementById("parrafo");
+    parrafo.style.color = "red";
+    parrafo.style.fontSize = "20px";
+    parrafo.style.fontWeight = "bold";
+  });
   //añadir o quitar clases
   document.getElementById("toggleClase").addEventListener("click", () => {
     const parrafo = document.getElementById("parrafo");
