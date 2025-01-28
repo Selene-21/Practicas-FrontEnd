@@ -7,13 +7,13 @@
         <meta content="description" content="catalogo">
         <meta content="keywords" content="plantas">
         <link rel="stylesheet" href="../CSS/home.css" type="text/css">
+        <link rel="script" href="../Javascript/home.js" type="script">
     </head>
     <body> 
       <header>
         <h1>Naturaleza Viva</h1>
         <h2><em>La Calera</em></h2>
         <p id="titulo bienvenida">Bienvenidos a Nuestro Jardín</p>
-        <img src="../Images/lithops-succulents-cactus-lithops-dorotheae_98330-36.avif" alt="foto de jardin" height="30" width="60">
       </header>
       <nav>
         <button type="button">Conocenos</button>
@@ -22,70 +22,34 @@
       </nav>
     <main>
       <p id="parrafo">En Naturaleza Viva contamos con una gran variedad de cactus y crasas.</p>
-      <p>No dudes en <em>Consultar</em></p>
     </main>
+    <section id="carrousel">
+      <div class="slider">
+        <div class="slides">
+          <img class="slide" src="../Images/lithops-succulents.avif" alt="Lithops-suculenta">
+          <img class="slide" src="../Images/mini-Cactus.jpg" alt="cactus-mini">
+          <img class="slide" src="../Images/ramo-suculentas.jpg" alt="ramo-suculentas">
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094</button>
+        <button class="next" onclick="nextSlide()">&#10095</button>
+      </div>
+    </section>
       <section id="Forms">
         <div class="content">  
           <form action="/submit_form" method="Publicacion">
             <label for="nombre">Nombre:</label>
             <tipo de entrada="texto" id="nombre" nombre="nombre"></tipo>
             <input type="text" placeholder="Nombre">
-            <label for="telefono">Telefono</label>
-            <input type="telefono" placeholder="Telefono"
-            <label for="Mensajes">Tu Consulta</label>
-            <tipo de entrada="texto" id="consultas" nombre="Consultas"></tipo>
+            <label for="Mensajes">Tu Mensaje</label>
+            <tipo de entrada="texto" id="comentarios" nombre="Comentar"></tipo>
             <input type="text" placeholder="Escribe aquí" value="">
-            <tipo de entrada="enviar" valor="Enviar"></tipo>
-            <button type="submit">Consultar</button>
+            <tipo de entrada="comentar" valor="comentar"></tipo>
           </form>
         </div>
       </section>
-
-        <script> //modificar contenido de un elemento
-        document.getElementById('cambiarEstilo').addEventListener('click', () => {
-            const parrafo = document.getElementById('parrafo');
-            parrafo.style.color = 'blue';
-            parrafo.style.fontSize = '20px';
-            parrafo.style.fontWeight = 'bold';
-          });
-        </script>
-
-        <script>//cambiar estilo
-            document.getElementById('cambiarEstilo').addEventListener('click', () => {
-              const parrafo = document.getElementById('parrafo');
-              parrafo.style.color = 'blue';
-              parrafo.style.fontSize = '20px';
-              parrafo.style.fontWeight = 'bold';
-            });
-        </script>
-          
-          
-          <button id="toggleClase">Resaltar Párrafo</button>
-        
-          <script>//añadir o quitar clases
-            document.getElementById('toggleClase').addEventListener('click', () => {
-              const parrafo = document.getElementById('parrafo');
-              parrafo.classList.toggle('resaltado');
-            });
-          </script>
-          <div id="contenedor"></div>
-          <button id="añadirElemento">Comentar</button>
-        
-          <script>//añadir elementos al DOM
-            document.getElementById('añadirElemento').addEventListener('click', () => {
-              const nuevoElemento = document.createElement('p');
-              nuevoElemento.innerText = 'Nuevo párrafo añadido';
-              document.getElementById('contenedor').appendChild(nuevoElemento);
-            });
-          </script>
-
-          <input type="text" id="entrada" placeholder="Escribe algo...">
-          <p id="salida"></p>
-        
-          <script>//cambiar contenidos en base a eventos
-            document.getElementById('entrada').addEventListener('input', (event) => {
-              document.getElementById('salida').innerText = event.target.value;
-            });
-          </script>
+      <div>
+        <button id="toggleClase">Resaltar Párrafo</button>
+        <button id="añadirElemento">Comentar</button>
+      </div>
     </body>
 </html>
