@@ -7,6 +7,7 @@
         <meta content="description" content="catalogo">
         <meta content="keywords" content="plantas">
         <link rel="stylesheet" href="../CSS/home.css" type="text/css">
+        <link rel="shortcut icon" href="../Images/Icons/favicon.ico" type="image/nat-icon">
         <link rel="script" href="../Javascript/home.js" type="script">
     </head>
     <body> 
@@ -16,26 +17,23 @@
         <p id="titulo bienvenida">Bienvenidos a Nuestro Jardín</p>
       </header>
       <nav>
-        <button type="button">Conocenos</button>
-        <button type="button">Nuestro Catalogo</button>
-        <button type="button">Contacto</button>
+        <a href="MeetUs.html">Conocenos</a>
+        <a href="Catalog.html">Nuestro Catalogo</a>
+        <a>Contacto</a>
       </nav>
-    <main>
-      <p id="parrafo">En Naturaleza Viva contamos con una gran variedad de cactus y crasas.</p>
-    </main>
-    <section id="carrousel">
-      <div class="slider">
-        <div class="slides">
-          <img class="slide" src="../Images/lithops-succulents.avif" alt="Lithops-suculenta">
-          <img class="slide" src="../Images/mini-Cactus.jpg" alt="cactus-mini">
-          <img class="slide" src="../Images/ramo-suculentas.jpg" alt="ramo-suculentas">
+      <main>
+        <div class="slider">
+          <div class="slides">
+            <img class="slide" src="../Images/Carrousel/lithops-succulents.avif" alt="Lithops-suculenta">
+            <img class="slide" src="../Images/Carrousel/mini-Cactus.jpg" alt="cactus-mini">
+            <img class="slide" src="../Images/Carrousel/ramo-suculentas.jpg" alt="ramo-suculentas">
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094</button>
+          <button class="next" onclick="nextSlide()">&#10095</button>
         </div>
-        <button class="prev" onclick="prevSlide()">&#10094</button>
-        <button class="next" onclick="nextSlide()">&#10095</button>
-      </div>
-    </section>
+        <p id="parrafo">En Naturaleza Viva contamos con una gran variedad de cactus y crasas.</p>
       <section id="Forms">
-        <div class="content">  
+        <div class="container">  
           <form action="/submit_form" method="Publicacion">
             <label for="nombre">Nombre:</label>
             <tipo de entrada="texto" id="nombre" nombre="nombre"></tipo>
@@ -51,5 +49,11 @@
         <button id="toggleClase">Resaltar Párrafo</button>
         <button id="añadirElemento">Comentar</button>
       </div>
+      </main>
+      <footer>
+        <button id="insta">Ig</button>
+        <button id="face">Fb</button>
+        <button id="whats">Wp</button>
+      </footer>
     </body>
 </html>
